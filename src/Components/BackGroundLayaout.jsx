@@ -17,7 +17,7 @@ const BackGroundLayaout = ({imageString}) => {
 
   const {weather} = useStateContext()
 
-  const[image, setImage] = useState(Snow)
+  const[image, setImage] = useState(Wind)
 
   // console.log(weather)
 
