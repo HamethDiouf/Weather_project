@@ -7,9 +7,9 @@ import Clear from '../assets/images/clear.jpeg'
 import Fog from '../assets/images/fog.jpg'
 import Cloudy from '../assets/images/cloud.jpeg'
 import Rainy from '../assets/images/rain.jpeg'
-import Snow from '../assets/images/snow.jpeg'
-import Stormy from '../assets/images/storm.jpeg'
-import Wind from '../assets/images/wind.jpeg'
+import Snow from '../assets/images/snow.jpg'
+import Stormy from '../assets/images/storm.jpg'
+import Wind from '../assets/images/wind.jpg'
 
 
 
@@ -17,7 +17,7 @@ const BackGroundLayaout = ({imageString}) => {
 
   const {weather} = useStateContext()
 
-  const[image, setImage] = useState(Cloudy)
+  const[image, setImage] = useState(Snow)
 
   // console.log(weather)
 
@@ -25,6 +25,7 @@ const BackGroundLayaout = ({imageString}) => {
 
     
     if(imageString) {
+
       let imageString = weather.conditions
 
       if(imageString.toLowerCase().inludes('clear')) { 
