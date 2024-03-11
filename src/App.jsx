@@ -33,7 +33,7 @@ function App() {
 
      <nav className="w-full p-3 flex justify-between items-center">
 
-      <h1 className='font-bold tracking-wide text-3xl'>Weather App</h1>
+      <h1 className='font-bold tracking-wide text-3xl'>Météo</h1>
 
       <div className="bg-white w-[15rem] overflow-hidden 
       

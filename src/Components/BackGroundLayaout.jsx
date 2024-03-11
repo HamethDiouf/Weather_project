@@ -3,7 +3,7 @@ import { useStateContext } from '../Context'
 
 // images
 
-import Clear from '../assets/images/clear.jpeg'
+import Clear from '../assets/images/clear.jpg'
 import Fog from '../assets/images/fog.jpg'
 import Cloudy from '../assets/images/cloud.jpeg'
 import Rainy from '../assets/images/rain.jpeg'
@@ -17,7 +17,7 @@ const BackGroundLayaout = ({imageString}) => {
 
   const {weather} = useStateContext()
 
-  const[image, setImage] = useState(Wind)
+  const[image, setImage] = useState(Clear)
 
   // console.log(weather)
 
