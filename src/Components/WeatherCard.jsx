@@ -24,13 +24,13 @@ const WeatherCard = ({
 
   temperature,
   
-  windspeed,
+  wspd,
 
   humidity,
 
   place,
 
-  heatIndex,
+  heatIndex, 
 
   iconString,
 
@@ -79,7 +79,7 @@ const WeatherCard = ({
     }
 
   }, [iconString])
-
+console.log(wspd);
 
   return (
 
@@ -133,7 +133,7 @@ const WeatherCard = ({
           
           <span className='font-normal '>
             
-            {windspeed} km/h</span></p>
+            {wspd} km/h</span></p>
 
           <p className='flex-1 text-center p-2 font-bold 
           

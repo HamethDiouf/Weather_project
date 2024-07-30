@@ -73,7 +73,7 @@ function App() {
            places={place}
         place={location} 
       
-        windspeed={weather.windspeed}
+        wspd={weather.wspd}
 
         humidity={weather.humidity}
 

@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react'
 import { useStateContext } from '../Context'
 
-// images
+// images 
 
-import Clear from '../assets/images/clear.jpg'
+import  Clear from '../assets/images/clear.jpg'
 import Fog from '../assets/images/fog.jpg'
 import Cloudy from '../assets/images/cloud.jpeg'
 import Rainy from '../assets/images/rain.jpeg'
@@ -19,7 +19,7 @@ const BackGroundLayaout = ({imageString}) => {
 
   const[image, setImage] = useState(Clear)
 
-  // console.log(weather)
+  console.log(weather)
 
   useEffect(() => {
 
@@ -32,12 +32,12 @@ const BackGroundLayaout = ({imageString}) => {
 
       setImage(Clear)
 
-    } else  if (imageString.toLowerCase().includes('cloud')) {
+    } else if (imageString.toLowerCase().includes('cloud')) {
 
       setImage(Cloudy)
 
     } 
-    else  if (imageString.toLowerCase().includes('rain') 
+    else if (imageString.toLowerCase().includes('rain') 
     
     || imageString.toLowerCase().includes('shower')) {
 
@@ -61,6 +61,7 @@ const BackGroundLayaout = ({imageString}) => {
   }
 
   }, [weather])
+  // console.log(imageString)
 
 
   return (
@@ -68,7 +69,7 @@ const BackGroundLayaout = ({imageString}) => {
       
       <img src={image} alt="weather_image"
       
-      className='h-screen w-full fixed left-0 top-0 -z-[10]' />
+      className='h-screen w-full fixed left-0 top-0 -z-[10]' />         
       
     </div>
   )

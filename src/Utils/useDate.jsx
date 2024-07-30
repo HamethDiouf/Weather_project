@@ -47,12 +47,6 @@ export const useDate = () => {
     return{
         date, time
     }
-    
-  return (
-    <div>
-      
-    </div>
-  )
 }
 
 
