@@ -33,7 +33,7 @@ function App() {
 
      <nav className="w-full p-3 flex justify-between items-center">
 
-      <h1 className='font-bold tracking-wide text-3xl'>Météo</h1>
+      <h1 className='font-bold tracking-wide text-3xl'>Meteo</h1>
 
       <div className="bg-white w-[15rem] overflow-hidden 
       
@@ -67,29 +67,32 @@ function App() {
 
       <main className='w-full flex flex-wrap gap-8 py-4 
       
-      px-[10%] items-center justify-center'>
+           px-[10%] items-center justify-center'>
 
         <WeatherCard 
            places={place}
-        place={location} 
+           
+           place={location} 
       
-        wspd={weather.wspd}
+           wspd={weather.wspd}
 
-        humidity={weather.humidity}
+           humidity={weather.humidity}
 
-        temperature={weather.temp}
+           temperature={weather.temp}
 
-        heatIndex={weather.heatIndex}
+           heatIndex={weather.heatIndex}
 
-        iconString={weather.iconString}
+           iconString={weather.iconString}
 
-        conditions={weather.conditions}
+           conditions={weather.conditions}
+
+           imageString={weather.conditions}
         
         />
 
         <div className="flex justify-cen ter
         
-        gap-8 flex-wrap w-[60%]">
+           gap-8 flex-wrap w-[60%]">
 
           {
 
@@ -99,13 +102,13 @@ function App() {
 
               <MiniCard
 
-              key={curr.datetime}
+                 key={curr.datetime}
 
-              time={curr.datetime}
+                 time={curr.datetime}
 
-              temp={curr.temp}
+                 temp={curr.temp}
 
-              iconString={curr.conditions}
+                 iconString={curr.conditions}
               
               />
 

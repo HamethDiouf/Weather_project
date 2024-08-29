@@ -20,7 +20,7 @@ export const StateContextProvider = ({children})  => {
     const fetchWeather = async()  => {
 
         const options = {
-
+ 
             method: 'GET',
 
             url: 'https://visual-crossing-weather.p.rapidapi.com/forecast',
